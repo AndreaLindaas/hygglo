@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+}
+.header {
+  font-size: 40px;
+  font-weight: bold;
+
+  color: #fff;
+  background-color: #0f4545ad;
+}
+
+.item-container ul {
+  list-style-type: none;
+}
+.items li {
+  display: grid;
+  grid-template-columns: 200px 100px 100px;
+  gap: 10px;
+}

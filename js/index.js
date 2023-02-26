@@ -11,7 +11,11 @@ function showTools(tools) {
   for (let i = 0; i < tools.length; i++) {
     console.log(tools[i].name);
 
-    let tool = `<li>${tools[i].name}</li>`;
+    let tool = `<li><span><a href="item.html?id=${tools[i].id}">${
+      tools[i].name
+    }</a></span><span>${tools[i].itemPrice},-</span><span>${
+      tools[i].income ? tools[i].income : "0"
+    },-</span></li>`;
     items.innerHTML += tool;
   }
 }
