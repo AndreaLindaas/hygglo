@@ -4,16 +4,26 @@ body {
 .header {
   color: #fff;
   background-color: #0f4545ad;
+  height: 100px;
 }
 .header .name {
   font-size: 40px;
   font-weight: bold;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 24px;
+  position: absolute;
 }
 .menu-items {
   display: none;
 }
 .menu-items.show {
   display: block;
+}
+.menu-container {
+  position: absolute;
+  right: 200px;
+  top: 42px;
 }
 .item-container ul {
   list-style-type: none;
