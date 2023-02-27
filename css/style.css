@@ -11,14 +11,23 @@ body {
   font-weight: bold;
   font-size: 40px;
   font-weight: bold;
-  margin: 24px;
-  position: absolute;
+  display: block;
+  padding: 26px;
 }
 .menu-items {
   display: none;
+  position: absolute;
+  padding: 0;
+  list-style-type: none;
+  width: 150px;
+  background-color: #0f4545ad;
+  top: 42px;
 }
 .menu-items.show {
   display: block;
+}
+.menu-items li {
+  padding: 10px 5px;
 }
 .menu-container {
   position: absolute;
