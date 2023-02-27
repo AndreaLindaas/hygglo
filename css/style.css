@@ -2,13 +2,19 @@ body {
   margin: 0;
 }
 .header {
-  font-size: 40px;
-  font-weight: bold;
-
   color: #fff;
   background-color: #0f4545ad;
 }
-
+.header .name {
+  font-size: 40px;
+  font-weight: bold;
+}
+.menu-items {
+  display: none;
+}
+.menu-items.show {
+  display: block;
+}
 .item-container ul {
   list-style-type: none;
 }
