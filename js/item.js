@@ -5,6 +5,7 @@ const id = params.get("id");
 const url = "http://hygglo.gpio.no/api/items/item/?id=" + id;
 const rentalUrl = "http://hygglo.gpio.no/api/rentals/rentalsForItem/?id=" + id;
 const text = document.querySelector(".text");
+const dates = document.querySelector(".dates");
 
 async function getItem() {
   const response = await fetch(url);
@@ -14,7 +15,7 @@ async function getItem() {
 }
 
 function showItem(item) {
-  console.log(item.name);
+  console.log(item);
   let info = `${item.name}`;
   text.innerHTML = info;
 }
@@ -28,7 +29,8 @@ async function getRentals() {
 
 function showRentals(rentals) {
   for (let i = 0; i < rentals.length; i++) {
-    console.log(rentals[i].date);
+    let theDates = `<li><span>${rentals[i].date}</span><span>${rentals[i].rentalPrice}</span></li>`;
+    dates.innerHTML += theDates;
   }
 }
 
