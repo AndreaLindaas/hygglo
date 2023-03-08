@@ -40,17 +40,25 @@ body {
   width: 400px;
 }
 
+.items li,
+.rentals li {
+  gap: 10px;
+  padding: 5px;
+}
+
 .items li {
   display: grid;
   grid-template-columns: 200px 100px 100px;
-  gap: 10px;
-
-  padding: 5px;
 }
 .items li a {
   color: black;
   text-decoration: none;
 }
-li:nth-child(2n) {
+.items li:nth-child(2n),
+.rentals li:nth-child(2n) {
   background-color: #e3e3e3;
+}
+.rentals li {
+  display: grid;
+  grid-template-columns: 200px 200px;
 }
