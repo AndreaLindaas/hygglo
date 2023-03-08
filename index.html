@@ -6,26 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hygglo</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/a63e3bd4b5.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
       <div class="header">
-        <span class="name">Hygglo</span>
+        <span class="name"><a href="index.html">Hygglo</a></span>
         <nav>
           <div class="menu-container">
-            <span class="menu-button">Knapp</span>
+            <span class="menu-button"><i class="fa-solid fa-bars"></i></span>
             <ul class="menu-items">
-              <li><a href="#">Hjem</a></li>
-              <li><a href="#">Legg til ting</a></li>
-              <li><a href="#">Registrer utleie</a></li>
+              <li><a href="index.html">Hjem</a></li>
+              <li><a href="addItem.html">Legg til ting</a></li>
+              <li><a href="addRental.html">Registrer utleie</a></li>
             </ul>
           </div>
         </nav>
       </div>
     </header>
-    <div class="item-container">
-      <ul class="items"></ul>
-    </div>
+    <main>
+      <div class="item-container">
+        <ul class="items"></ul>
+      </div>
+    </main>
     <script src="js/general.js"></script>
     <script src="js/index.js"></script>
   </body>
