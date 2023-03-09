@@ -9,7 +9,7 @@ async function getItems() {
 function createOptions(items) {
   for (let i = 0; i < items.length; i++) {
     console.log(items[i]);
-    let option = `<option>${items[i].name}</option>`;
+    let option = `<option value="${items[i].id}">${items[i].name}</option>`;
     itemsHtml.innerHTML += option;
   }
 }
