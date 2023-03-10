@@ -4,9 +4,9 @@ const id = params.get("id");
 
 const url = "http://hygglo.gpio.no/api/items/item/?id=" + id;
 const rentalUrl = "http://hygglo.gpio.no/api/rentals/rentalsForItem/?id=" + id;
-const text = document.querySelector(".text");
+const title = document.querySelector(".title");
 const rentals = document.querySelector(".rentals");
-
+const image = document.querySelector(".item-image");
 async function getItem() {
   const response = await fetch(url);
   const result = await response.json();
@@ -16,8 +16,9 @@ async function getItem() {
 
 function showItem(item) {
   console.log(item);
-  let info = `${item.name}`;
-  text.innerHTML = info;
+
+  title.innerHTML = `${item.name}`;
+  image.src = `images/${item.image}`;
 }
 
 async function getRentals() {

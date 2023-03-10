@@ -66,6 +66,15 @@ body {
   display: grid;
   grid-template-columns: 200px 200px;
 }
+h1.title {
+  text-align: center;
+}
+.image-container {
+  text-align: center;
+}
+.item-image {
+  width: 200px;
+}
 
 @media only screen and (min-width: 768px) {
   .item-container ul {

@@ -31,6 +31,9 @@ async function saveRental(urlParams) {
   const response = await fetch(baseUrl + urlParams);
   const result = await response.json();
   console.log(result);
+  if (result.status === "ok") {
+    window.location.href = "/";
+  }
 }
 
 getItems();
