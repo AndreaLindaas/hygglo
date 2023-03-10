@@ -33,10 +33,17 @@ body {
 .menu-items li {
   padding: 10px 5px;
 }
+.menu-items li a {
+  color: #fff;
+  text-decoration: none;
+}
 .menu-container {
   position: absolute;
-  right: 200px;
+  right: 100px;
   top: 42px;
+}
+.menu-button i {
+  font-size: 30px;
 }
 .item-container ul {
   list-style-type: none;
