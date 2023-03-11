@@ -26,6 +26,7 @@ body {
   width: 150px;
   background-color: #0f4545ad;
   top: 42px;
+  right: -30px;
 }
 .menu-items.show {
   display: block;
@@ -37,10 +38,13 @@ body {
   color: #fff;
   text-decoration: none;
 }
+.menu-items a:hover {
+  text-decoration: underline;
+}
 .menu-container {
   position: absolute;
-  right: 100px;
-  top: 42px;
+  right: 30px;
+  top: 38px;
 }
 .menu-button i {
   font-size: 30px;
@@ -112,5 +116,13 @@ form button {
   }
   .items li {
     grid-template-columns: 200px 100px 100px;
+  }
+  .menu-container {
+    position: absolute;
+    right: 100px;
+    top: 42px;
+  }
+  .menu-items {
+    right: -100px;
   }
 }
