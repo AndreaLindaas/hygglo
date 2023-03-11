@@ -49,6 +49,7 @@ body {
 .menu-button i {
   font-size: 30px;
 }
+
 .item-container ul {
   list-style-type: none;
   margin: 40px auto;
@@ -72,6 +73,9 @@ body {
 .items li:nth-child(2n),
 .rentals li:nth-child(2n) {
   background-color: #e3e3e3;
+}
+.item-number {
+  margin: 20px 0 0 40px;
 }
 .rentals li {
   display: grid;
@@ -125,5 +129,9 @@ form button {
   .menu-items {
     right: -100px;
     top: 42px;
+  }
+  .item-number {
+    text-align: center;
+    margin-top: 20px;
   }
 }

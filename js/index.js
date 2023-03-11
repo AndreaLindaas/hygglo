@@ -1,5 +1,6 @@
 const url = "http://hygglo.gpio.no/api/items/";
 const items = document.querySelector(".items");
+const itemNubmer = document.querySelector(".item-number");
 
 async function getTools() {
   const response = await fetch(url);
@@ -11,6 +12,7 @@ function showTools(tools) {
   const headerLi = `<li><span><strong>Ting</strong></span><span><strong>Pris</strong></span><span><strong>Inntjening</strong></span></li>`;
   items.innerHTML = headerLi;
   for (let i = 0; i < tools.length; i++) {
+    itemNubmer.innerHTML = `Du leier ut <strong>${tools.length}</strong> ting:`;
     let tool = `<li><span><a href="item.html?id=${tools[i].id}">${
       tools[i].name
     }</a></span><span>${tools[i].itemPrice},-</span><span>${
