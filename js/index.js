@@ -12,7 +12,7 @@ function showTools(tools) {
   const headerLi = `<li><span><strong>Ting</strong></span><span><strong>Pris</strong></span><span><strong>Inntjening</strong></span></li>`;
   items.innerHTML = headerLi;
   for (let i = 0; i < tools.length; i++) {
-    itemNubmer.innerHTML = `Du leier ut <strong>${tools.length}</strong> ting:`;
+    itemNubmer.innerHTML = `Du leier ut <strong>${tools.length}</strong> ting og har tjent kroner:`;
     let tool = `<li><span><a href="item.html?id=${tools[i].id}">${
       tools[i].name
     }</a></span><span>${tools[i].itemPrice},-</span><span>${

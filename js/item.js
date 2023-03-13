@@ -7,6 +7,9 @@ const rentalUrl = "http://hygglo.gpio.no/api/rentals/rentalsForItem/?id=" + id;
 const title = document.querySelector(".title");
 const rentals = document.querySelector(".rentals");
 const image = document.querySelector(".item-image");
+const itemPriceHtml = document.querySelector(".item-price");
+const urlTing = document.querySelector(".url-ting");
+
 async function getItem() {
   const response = await fetch(url);
   const result = await response.json();
@@ -19,6 +22,8 @@ function showItem(item) {
 
   title.innerHTML = `${item.name}`;
   image.src = `images/${item.image}`;
+  itemPriceHtml.innerHTML = `Du kjøpte ${item.name} for ${item.itemPrice} ,-`;
+  urlTing.innerHTML = `Se annonse på <a href="${item.url}">Hygglo</a>`;
 }
 
 async function getRentals() {
@@ -32,7 +37,7 @@ function showRentals(rentalList) {
   const headerLi = `<li><span><strong>Dato</strong></span><span><strong>Pris</strong></span>`;
   rentals.innerHTML = headerLi;
   for (let i = 0; i < rentalList.length; i++) {
-    let rental = `<li><span>${rentalList[i].date}</span><span>${rentalList[i].rentalPrice}</span></li>`;
+    let rental = `<li><span>${rentalList[i].date}</span><span>${rentalList[i].rentalPrice},-</span><i class="fa-solid fa-xmark"></i><span></span></li>`;
     rentals.innerHTML += rental;
   }
 }

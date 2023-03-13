@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 .header {
   color: #fff;
@@ -60,7 +61,10 @@ body {
 .items li,
 .rentals li {
   gap: 10px;
-  padding: 5px;
+  padding: 12px;
+}
+.rentals i {
+  color: red;
 }
 
 .items li {
@@ -79,7 +83,7 @@ body {
 }
 .rentals li {
   display: grid;
-  grid-template-columns: 200px 200px;
+  grid-template-columns: 200px 130px 36px;
 }
 h1.title {
   text-align: center;
