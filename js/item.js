@@ -23,7 +23,7 @@ function showItem(item) {
   title.innerHTML = `${item.name}`;
   image.src = `images/${item.image}`;
   itemPriceHtml.innerHTML = `Du kjøpte ${item.name} for ${item.itemPrice} ,-`;
-  urlTing.innerHTML = `Se annonse på <a href="${item.url}">Hygglo</a>`;
+  urlTing.innerHTML = `Se annonse på <a href="${item.url}" target="_blank">Hygglo</a>`;
 }
 
 async function getRentals() {
